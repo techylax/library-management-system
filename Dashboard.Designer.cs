@@ -63,10 +63,11 @@
             this.booksToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.addNewBooksToolStripMenuItem,
             this.viewBooksToolStripMenuItem});
+            this.booksToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.booksToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("booksToolStripMenuItem.Image")));
             this.booksToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.booksToolStripMenuItem.Name = "booksToolStripMenuItem";
-            this.booksToolStripMenuItem.Size = new System.Drawing.Size(101, 54);
+            this.booksToolStripMenuItem.Size = new System.Drawing.Size(107, 54);
             this.booksToolStripMenuItem.Text = "Books";
             // 
             // addNewBooksToolStripMenuItem
@@ -92,10 +93,11 @@
             this.studentToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.addStudentToolStripMenuItem,
             this.viewStudentsDetailToolStripMenuItem});
+            this.studentToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.studentToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("studentToolStripMenuItem.Image")));
             this.studentToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.studentToolStripMenuItem.Name = "studentToolStripMenuItem";
-            this.studentToolStripMenuItem.Size = new System.Drawing.Size(115, 54);
+            this.studentToolStripMenuItem.Size = new System.Drawing.Size(124, 54);
             this.studentToolStripMenuItem.Text = "Students";
             // 
             // addStudentToolStripMenuItem
@@ -116,34 +118,38 @@
             // 
             // issueBooksToolStripMenuItem
             // 
+            this.issueBooksToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.issueBooksToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("issueBooksToolStripMenuItem.Image")));
             this.issueBooksToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.issueBooksToolStripMenuItem.Name = "issueBooksToolStripMenuItem";
-            this.issueBooksToolStripMenuItem.Size = new System.Drawing.Size(130, 54);
+            this.issueBooksToolStripMenuItem.Size = new System.Drawing.Size(142, 54);
             this.issueBooksToolStripMenuItem.Text = "Issue Books";
             // 
             // returnBooksToolStripMenuItem
             // 
+            this.returnBooksToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.returnBooksToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("returnBooksToolStripMenuItem.Image")));
             this.returnBooksToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.returnBooksToolStripMenuItem.Name = "returnBooksToolStripMenuItem";
-            this.returnBooksToolStripMenuItem.Size = new System.Drawing.Size(139, 54);
+            this.returnBooksToolStripMenuItem.Size = new System.Drawing.Size(152, 54);
             this.returnBooksToolStripMenuItem.Text = "Return Books";
             // 
             // booksToolStripMenuItem1
             // 
+            this.booksToolStripMenuItem1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.booksToolStripMenuItem1.Image = ((System.Drawing.Image)(resources.GetObject("booksToolStripMenuItem1.Image")));
             this.booksToolStripMenuItem1.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.booksToolStripMenuItem1.Name = "booksToolStripMenuItem1";
-            this.booksToolStripMenuItem1.Size = new System.Drawing.Size(139, 54);
+            this.booksToolStripMenuItem1.Size = new System.Drawing.Size(154, 54);
             this.booksToolStripMenuItem1.Text = "Books Details";
             // 
             // exitToolStripMenuItem
             // 
+            this.exitToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.exitToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("exitToolStripMenuItem.Image")));
             this.exitToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(88, 54);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(93, 54);
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
