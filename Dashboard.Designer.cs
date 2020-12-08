@@ -76,6 +76,7 @@
             this.addNewBooksToolStripMenuItem.Name = "addNewBooksToolStripMenuItem";
             this.addNewBooksToolStripMenuItem.Size = new System.Drawing.Size(214, 56);
             this.addNewBooksToolStripMenuItem.Text = "Add New Books";
+            this.addNewBooksToolStripMenuItem.Click += new System.EventHandler(this.addNewBooksToolStripMenuItem_Click);
             // 
             // viewBooksToolStripMenuItem
             // 
@@ -87,6 +88,7 @@
             // 
             // studentToolStripMenuItem
             // 
+            this.studentToolStripMenuItem.BackColor = System.Drawing.SystemColors.Control;
             this.studentToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.addStudentToolStripMenuItem,
             this.viewStudentsDetailToolStripMenuItem});
@@ -106,6 +108,8 @@
             // 
             // viewStudentsDetailToolStripMenuItem
             // 
+            this.viewStudentsDetailToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("viewStudentsDetailToolStripMenuItem.Image")));
+            this.viewStudentsDetailToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.viewStudentsDetailToolStripMenuItem.Name = "viewStudentsDetailToolStripMenuItem";
             this.viewStudentsDetailToolStripMenuItem.Size = new System.Drawing.Size(215, 56);
             this.viewStudentsDetailToolStripMenuItem.Text = "View Students Detail";
@@ -141,6 +145,7 @@
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
             this.exitToolStripMenuItem.Size = new System.Drawing.Size(88, 54);
             this.exitToolStripMenuItem.Text = "Exit";
+            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
             // Dashboard
             // 
