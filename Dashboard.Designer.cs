@@ -69,6 +69,7 @@
             this.booksToolStripMenuItem.Name = "booksToolStripMenuItem";
             this.booksToolStripMenuItem.Size = new System.Drawing.Size(107, 54);
             this.booksToolStripMenuItem.Text = "Books";
+            this.booksToolStripMenuItem.Click += new System.EventHandler(this.booksToolStripMenuItem_Click);
             // 
             // addNewBooksToolStripMenuItem
             // 
@@ -86,6 +87,7 @@
             this.viewBooksToolStripMenuItem.Name = "viewBooksToolStripMenuItem";
             this.viewBooksToolStripMenuItem.Size = new System.Drawing.Size(214, 56);
             this.viewBooksToolStripMenuItem.Text = "View Books";
+            this.viewBooksToolStripMenuItem.Click += new System.EventHandler(this.viewBooksToolStripMenuItem_Click);
             // 
             // studentToolStripMenuItem
             // 
@@ -105,7 +107,7 @@
             this.addStudentToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("addStudentToolStripMenuItem.Image")));
             this.addStudentToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.addStudentToolStripMenuItem.Name = "addStudentToolStripMenuItem";
-            this.addStudentToolStripMenuItem.Size = new System.Drawing.Size(215, 56);
+            this.addStudentToolStripMenuItem.Size = new System.Drawing.Size(239, 56);
             this.addStudentToolStripMenuItem.Text = "Add Student";
             // 
             // viewStudentsDetailToolStripMenuItem
@@ -113,7 +115,7 @@
             this.viewStudentsDetailToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("viewStudentsDetailToolStripMenuItem.Image")));
             this.viewStudentsDetailToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.viewStudentsDetailToolStripMenuItem.Name = "viewStudentsDetailToolStripMenuItem";
-            this.viewStudentsDetailToolStripMenuItem.Size = new System.Drawing.Size(215, 56);
+            this.viewStudentsDetailToolStripMenuItem.Size = new System.Drawing.Size(239, 56);
             this.viewStudentsDetailToolStripMenuItem.Text = "View Students Detail";
             // 
             // issueBooksToolStripMenuItem
