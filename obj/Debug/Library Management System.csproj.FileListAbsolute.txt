@@ -11,3 +11,4 @@ C:\Users\laxma\source\repos\Library Management System\Library Management System\
 C:\Users\laxma\source\repos\Library Management System\Library Management System\obj\Debug\Library_Management_System.Dashboard.resources
 C:\Users\laxma\source\repos\Library Management System\Library Management System\obj\Debug\Library_Management_System.AddBooks.resources
 C:\Users\laxma\source\repos\Library Management System\Library Management System\obj\Debug\Library_Management_System.ViewBook.resources
+C:\Users\laxma\source\repos\Library Management System\Library Management System\obj\Debug\Library_Management_System.AddStudent.resources
