@@ -37,6 +37,7 @@
             this.txtBookName = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.txtPDate = new System.Windows.Forms.TextBox();
             this.btnCancel = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
             this.btnUpdate = new System.Windows.Forms.Button();
@@ -51,7 +52,6 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.txtPDate = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -151,6 +151,13 @@
             this.panel2.Size = new System.Drawing.Size(934, 227);
             this.panel2.TabIndex = 5;
             // 
+            // txtPDate
+            // 
+            this.txtPDate.Location = new System.Drawing.Point(616, 18);
+            this.txtPDate.Name = "txtPDate";
+            this.txtPDate.Size = new System.Drawing.Size(207, 20);
+            this.txtPDate.TabIndex = 24;
+            // 
             // btnCancel
             // 
             this.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
@@ -173,6 +180,7 @@
             this.btnDelete.TabIndex = 22;
             this.btnDelete.Text = "Delete";
             this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // btnUpdate
             // 
@@ -281,20 +289,13 @@
             this.label3.TabIndex = 6;
             this.label3.Text = "Book Name";
             // 
-            // txtPDate
-            // 
-            this.txtPDate.Location = new System.Drawing.Point(616, 18);
-            this.txtPDate.Name = "txtPDate";
-            this.txtPDate.Size = new System.Drawing.Size(207, 20);
-            this.txtPDate.TabIndex = 24;
-            // 
             // ViewBook
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.ClientSize = new System.Drawing.Size(1025, 463);
+            this.ClientSize = new System.Drawing.Size(1042, 480);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.txtBookName);

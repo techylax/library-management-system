@@ -106,20 +106,41 @@ namespace Library_Management_System
 
         private void btnUpdate_Click(object sender, EventArgs e)
         {
-            String bname = txtBookName.Text;
-            String bauthor = txtAuthor.Text;
-            String Publication = txtPublication.Text;
-            String pdate = txtPDate.Text;
-            Int64 price = Int64.Parse(txtPrice.Text);
-            Int64 quan = Int64.Parse(txtQuantity.Text);
-            SqlConnection con = new SqlConnection();
-            con.ConnectionString = "data source = (LocalDB)\\MSSQLLocalDB; database=library; integrated security = True";
-            SqlCommand cmd = new SqlCommand();
-            cmd.Connection = con;
-            cmd.CommandText = "update NewBook set bName='"+bname+"',bAuthor='"+bauthor+"',bPubl='"+Publication+"',bPDate='"+pdate+"',bPrice="+price+",bQuan="+quan+" where bid="+rowid+"";
-            SqlDataAdapter da = new SqlDataAdapter(cmd);
-            DataSet ds = new DataSet();
-            da.Fill(ds);
+            if (MessageBox.Show("Data will be updated. Confirm.?", "Success", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)
+
+            {
+                String bname = txtBName.Text;
+                String bauthor = txtAuthor.Text;
+                String Publication = txtPublication.Text;
+                String pdate = txtPDate.Text;
+                Int64 price = Int64.Parse(txtPrice.Text);
+                Int64 quan = Int64.Parse(txtQuantity.Text);
+                SqlConnection con = new SqlConnection();
+                con.ConnectionString = "data source = (LocalDB)\\MSSQLLocalDB; database=library; integrated security = True";
+                SqlCommand cmd = new SqlCommand();
+                cmd.Connection = con;
+                cmd.CommandText = "update NewBook set bName='" + bname + "',bAuthor='" + bauthor + "',bPubl='" + Publication + "',bPDate='" + pdate + "',bPrice=" + price + ",bQuan=" + quan + " where bid=" + rowid + "";
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                DataSet ds = new DataSet();
+                da.Fill(ds);
+            }
+        }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Data will be deleted. Confirm.?", "Success", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)
+
+            {
+               
+                SqlConnection con = new SqlConnection();
+                con.ConnectionString = "data source = (LocalDB)\\MSSQLLocalDB; database=library; integrated security = True";
+                SqlCommand cmd = new SqlCommand();
+                cmd.Connection = con;
+                cmd.CommandText = "Delete from NewBook where bid=" + rowid + "";
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                DataSet ds = new DataSet();
+                da.Fill(ds);
+            }
         }
     }
 }
