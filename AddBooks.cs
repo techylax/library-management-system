@@ -45,6 +45,19 @@ namespace Library_Management_System
                 Int64 quan = Int64.Parse(txtQuantity.Text);
 
                 SqlConnection con = new SqlConnection();
+                con.ConnectionString = "data source = (LocalDB)\\MSSQLLocalDB; database=library; integrated security = True";
+                SqlCommand cmd = new SqlCommand();
+                cmd.Connection = con;
+                con.Open();
+                cmd.CommandText = "insert into NewBook (bName,bAuthor,bPubl,bPDate,bPrice,bQuan) values('" + bname + "','" + bauthor + "','" + Publication + "','" + pdate + "','" + price + "'," + quan + ")";
+                cmd.ExecuteNonQuery();
+                con.Close();
+                MessageBox.Show("Data Saved.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                txtBookName.Clear();
+                txtAuthor.Clear();
+                txtPrice.Clear();
+                txtPublication.Clear();
+                txtQuantity.Clear();
                 
 
 
